@@ -25,21 +25,22 @@ public:
         }
         
     }
+
+    static void apply_numeric(vector <Shape>& v, double (*func)(double, double),
+        double val)
+    {
+        for (int i = 0; i < v.size(); i++)
+            v[i].flache = func(val, v[i].flache);
+    }
+
+    static double multiply(double valoare1, double valoare2)
+    {
+        return valoare1 * valoare2;
+    }
+
+    static double divide(double valoare1, double valoare2)
+    {
+        return valoare1 / valoare2;
+    }
 };
 
-void apply_numeric(vector <Shape>& v, double (*func)(double, double),
-    double val)
-{
-    for (int i = 0; i < v.size(); i++)
-        v[i].flache = func(val, v[i].flache);
-}
-
-double multiply(double valoare1, double valoare2)
-{
-    return valoare1 * valoare2;
-}
-
-double divide(double valoare1, double valoare2)
-{
-    return valoare1 / valoare2;
-}

@@ -29,5 +29,19 @@
     <ClInclude Include="haus3.h">
       <Filter>Source Files</Filter>
     </ClInclude>
+    <ClInclude Include="tema_seminar.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ex6.h">
+      <Filter>Source Files</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="date_out.txt">
+      <Filter>Source Files</Filter>
+    </Text>
+    <Text Include="bani.txt">
+      <Filter>Source Files</Filter>
+    </Text>
   </ItemGroup>
 </Project>
